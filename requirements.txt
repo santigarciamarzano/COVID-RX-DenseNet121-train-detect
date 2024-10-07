@@ -1,0 +1,4 @@
+tensorflow==2.10.0  # O la versión que estés utilizando
+pillow  # Para manejar imágenes
+python-dotenv  # Para cargar variables de entorno desde el .env
+pyyaml  # Para manejar archivos YAML

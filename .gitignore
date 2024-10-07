@@ -1,0 +1,6 @@
+# Ignorar carpetas de datos e imágenes
+dataset/
+images/
+
+# Ignorar archivo de variables de entorno
+.env
