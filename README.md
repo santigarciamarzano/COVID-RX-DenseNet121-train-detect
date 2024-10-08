@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 Descarga el dataset https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database y utiliza las carpetas unicamente las carpetas "covid" y "normal". Luego estructura el dataset de la siguiente manera, con aproximadamente un ratio de imagenes de 70%train, 15%val y 15%test
 
-.
+```bash
 ├── src
 │   ├── load_data.py       # Script para cargar los datos
 │   ├── model.py           # Script para crear y entrenar el modelo
@@ -32,15 +32,15 @@ Descarga el dataset https://www.kaggle.com/datasets/tawsifurrahman/covid19-radio
 ├── .env                   # Variables de entorno
 ├── notebook.ipynb         # Jupyter Notebook para la ejecución de bloques de código
 ├── README.md              # Documento explicativo del proyecto (este archivo)
-
+```
 
 
 ## Configuración del entorno .env
 
 Este archivo incluye variables necesarias para el entorno de trabajo. Asegurate de copiar la ruta al dataset:
-
+```
 DATASET_DIR= ruta/dataset
-
+```
 ---
 
 ## Archivo de configuración config.yaml
@@ -55,11 +55,11 @@ Cómo entrenar el modelo
 
 El entrenamiento del modelo está definido en src/model.py. Este script:
 
-    Carga los datos de entrenamiento y validación desde las carpetas especificadas.
-    Define la arquitectura del modelo utilizando DenseNet121.
-    Compila el modelo con el optimizador Adam.
-    Entrena el modelo utilizando los generadores de datos.
-    Guarda el mejor modelo encontrado durante el entrenamiento.
+Carga los datos de entrenamiento y validación desde las carpetas especificadas.
+Define la arquitectura del modelo utilizando DenseNet121.
+Compila el modelo con el optimizador Adam.
+Entrena el modelo utilizando los generadores de datos.
+Guarda el mejor modelo encontrado durante el entrenamiento.
 
 Para ejecutar el entrenamiento, asegúrate de tener los datos organizados en las carpetas adecuadas y luego corre el script.
 
